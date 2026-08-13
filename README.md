@@ -34,3 +34,18 @@ conda install 想安装的库
 **这个时候千万不要关闭终端，关了之后浏览器上的服务就没了。** <br>
 如果不想在浏览器中使用的话，可以在vs code里面装一个 `Jupyter`插件同样也可以使用
 
+### Homework1
+description: you need to build a classifier (e.g., random forest or svm) for the prediction of TB on HIV patients. <br>
+steps :
+1) download the dataset from the NIH GEO database
+https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE162164&format=file
+2) annotate the patients with its phenotype
+in other words, some patients are HIV only, the rest are HIV + TB
+1. do some basic file reading and processing (convert float values)
+2. train a model, could be tricky, the performance could be very bad
+3. you need some tricks to minimize the number of features (some feature selection to reduce
+the feature space), for example, if you find a gene that is not very different from HIV vs HIV+TB,
+then you know this feature won't be important
+4. you train the model and calculate the accuracy, report it
+5. write a report (jupyter notebook, detailing each of the steps and results) you need also to tell
+me what is the biomarker (the most critical feature for the TB+HIV disease)
